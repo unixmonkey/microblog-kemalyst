@@ -3,7 +3,7 @@ require "../models/blargh"
 module BlarghController
   class Index < Kemalyst::Controller
     def call(context)
-      blarghs = Blargh.all
+      blarghs = Blargh.all("ORDER BY created_at DESC")
       render "blargh/index.ecr", "main.ecr"
     end
   end
