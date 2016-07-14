@@ -3,15 +3,17 @@ require "../models/blargh"
 module BlarghController
   class Index < Kemalyst::Controller
     def call(context)
-      new_blargh = Blargh.new
-      render "blargh/new.ecr", "main.ecr"
+      blarghs = Blargh.all
+      render "blargh/index.ecr", "main.ecr"
     end
   end
 
-  class New < Kemalyst::Controller
+  class Create < Kemalyst::Controller
     def call(context)
-      demo = Demo.new
-      render "blargh/new.ecr", "main.ecr"
+      blargh = Blargh.new
+      blargh.post = context.params["blargh"] as String
+      blargh.save
+      redirect "/"
     end
   end
 end

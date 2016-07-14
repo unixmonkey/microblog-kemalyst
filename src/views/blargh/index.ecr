@@ -3,8 +3,17 @@
 <form action="/blarghs" method="post">
   <input type="hidden" name="_method" value="put"/>
   <div class="form-group">
-    <input type="text" class="form-control" id="name" name="name"
+    <input type="text" class="form-control" id="blargh" name="blargh"
            placeholder="TYPE YO THOUGHTS HERE" >
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
+
+<% blarghs.each do |blargh| %>
+
+<div class="blog-post">
+  <h2 class="blog-post-title"><%= blargh.post %></h2>
+  <p class="blog-post-meta"><%= blargh.updated_at %></p>
+</div>
+
+<% end %>

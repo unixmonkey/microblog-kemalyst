@@ -8,6 +8,7 @@ include Kemalyst::Handler
 
 # This is how to setup the root path:
 get    "/",                 BlarghController::Index.instance
+put    "/blarghs",          BlarghController::Create.instance
 
 # This is an example of a resource using a traditional site:
 get    "/demos",            DemoController::Index.instance

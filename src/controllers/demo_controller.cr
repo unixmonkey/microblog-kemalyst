@@ -2,9 +2,9 @@ require "../models/demo"
 
 module DemoController
   # WARNING: Do not store state in this module unless you
-  # protect it with mutexes since each class below can be 
+  # protect it with mutexes since each class below can be
   # called from different fibers.
-  
+
   class Index < Kemalyst::Controller
     def call(context)
       demos = Demo.all
@@ -56,7 +56,7 @@ module DemoController
   class Update < Kemalyst::Controller
     def call(context)
       id = context.params["id"]
-      if demo = Demo.find id 
+      if demo = Demo.find id
         demo.name = context.params["name"] as String
         if demo.save
           redirect "/demos"
