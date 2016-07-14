@@ -1,0 +1,30 @@
+version: 1.0
+shards:
+  delimiter_tree:
+    github: drujensen/delimiter_tree
+    commit: eeddecd0475710adb6414595e6144bfdce3a95f1
+
+  kemalyst:
+    github: drujensen/kemalyst
+    commit: aa5110b5a48433c811e605763e18c0de3c5bdf9e
+
+  kemalyst-model:
+    github: drujensen/kemalyst-model
+    commit: 31c88cd2f98b7a3dbaaf7ca45c63a1b97063b946
+
+  kemalyst-validators:
+    github: drujensen/kemalyst-validators
+    commit: 850824241c31077221d3a254db421de6024b4bd2
+
+  kilt:
+    github: jeromegn/kilt
+    commit: adf515f1212fe985dbc9da561f02ade11bfe8e5f
+
+  pg:
+    github: will/crystal-pg
+    commit: cafe3e90b4a239aa9819482543c63503a6a3f477
+
+  pool:
+    github: ysbaddaden/pool
+    commit: c4ecfad1b87fbd8c6484d1fd536ccfd14c40cc94
+

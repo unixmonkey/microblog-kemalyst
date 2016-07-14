@@ -1,6 +1,4 @@
-require "spec"
-require "kemalyst"
-require "../config/*"
+require "../spec_helper"
 
 def create_context(request)
   io = MemoryIO.new

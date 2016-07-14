@@ -5,3 +5,11 @@ authors:
   - David Jones <david@getfretless.com>
 
 license: MIT
+
+dependencies:
+  kemalyst:
+    github: drujensen/kemalyst
+    branch: master
+  pg:
+    github: will/crystal-pg
+    branch: master
